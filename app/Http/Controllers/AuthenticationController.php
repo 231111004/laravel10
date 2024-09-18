@@ -20,9 +20,9 @@ class AuthenticationController extends Controller
     $hashedPassword = hash('sha256', md5($password));
 
     if ($action === 'register') {
-        return $this->register($request); // Pass the whole Request object
+        return $this->register($request); 
     } elseif ($action === 'login') {
-        return $this->login($request); // Pass the whole Request object
+        return $this->login($request); 
     }
 }
 
